@@ -60,8 +60,8 @@ pip install -r requirements.txt
 ## Steps to analyse results
 1. A new folder called runs will be created in the main directory.
 2. Go to runs -> detect -> train
-3. Open [results.png](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/blob/main/runs/detect/train2/results.csv) file and check if the loss graphs are descending.
-4. View the model performance by opening [val_batch0_pred.jpg](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/blob/main/runs/detect/train2/val_batch0_pred.jpg) file.
+3. Open [results](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/blob/main/runs/detect/train/results.png) file and check if the loss graphs are descending.
+4. View the model performance by opening [val_batch0_pred](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/blob/main/runs/detect/train/val_batch0_pred.jpg) file.
 
 ## Steps to evaluate model on mp4 video
 1. Return to main directory.

@@ -1,7 +1,7 @@
 # Yolov8 Custom Dataset Training
 - This repo can be used to train Yolov8 model for custom training on any class from the [Open Images Dataset v7](https://storage.googleapis.com/openimages/web/visualizer/index.html).
 - Just change the class id in **create_image_list_file.py** and **create_dataset_yolo_format.py** files.
-  - Right now it is set to [alpaca_id = '/m/0pcr'](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/blob/d974d44746422ddc158835d42cf60f007f3fb4f4/prepare_data/create_image_list_file.py#L4).
+  - Right now it is set to [class_id = '/m/0pcr'](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/blob/d974d44746422ddc158835d42cf60f007f3fb4f4/prepare_data/create_image_list_file.py#L4).
   - You can change it to some other id based on the class from the [class description](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/blob/main/prepare_data/class-descriptions-boxable.csv) file.
 
 

@@ -14,7 +14,7 @@ for set_ in ['train', 'validation', 'test']:
             shutil.rmtree(dir_)
         os.mkdir(dir_)
 
-alpaca_id = '/m/0pcr'
+class_id = '/m/0pcr'
 
 train_bboxes_filename = os.path.join('.', 'oidv6-train-annotations-bbox.csv')
 validation_bboxes_filename = os.path.join('.', 'validation-annotations-bbox.csv')
@@ -28,7 +28,7 @@ for j, filename in enumerate([train_bboxes_filename, validation_bboxes_filename,
         line = f.readline()
         while len(line) != 0:
             id, _, class_name, _, x1, x2, y1, y2, _, _, _, _, _ = line.split(',')[:13]
-            if class_name in [alpaca_id]:
+            if class_name in [class_id]:
                 if not os.path.exists(os.path.join(DATA_OUT_DIR, set_, 'images', '{}.jpg'.format(id))):
                     shutil.copy(os.path.join(DATA_ALL_DIR, '{}.jpg'.format(id)),
                                 os.path.join(DATA_OUT_DIR, set_, 'images', '{}.jpg'.format(id)))

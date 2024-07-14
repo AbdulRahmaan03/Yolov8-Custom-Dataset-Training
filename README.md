@@ -57,12 +57,18 @@ pip install -r requirements.txt
     ```
     yolo detect train data=config.yaml model='yolov8n.yaml' epochs=100
     ```
-## Steps to analyse results
+## Steps to analyse train results
 1. A new folder called runs will be created in the main directory.
 2. Go to runs -> detect -> train
 3. Open [results](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/blob/main/runs/detect/train/results.png) file and check if the loss graphs are descending.
 4. View the model performance by opening [val_batch0_pred](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/blob/main/runs/detect/train/val_batch0_pred.jpg) file.
 
+## Steps to test
+1. Run the following command:
+    ```
+    yolo detect val data=config.yaml model=runs/detect/train/weights/best.pt split=test
+    ```
+2. Test results can be analysed in the same way as done for train results.
 ## Steps to evaluate model on mp4 video
 1. Return to main directory.
 2. Paste your video in [videos](https://github.com/AbdulRahmaan03/Yolov8-Custom-Dataset-Training/tree/main/videos) folder.
